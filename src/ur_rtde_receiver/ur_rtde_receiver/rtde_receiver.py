@@ -6,6 +6,7 @@ from rclpy import Parameter
 from rcl_interfaces.msg import SetParametersResult
 from rclpy.node import Node
 
+from std_msgs.msg import String
 from rtde_interfaces.msg import UrRtde
 
 import json
@@ -18,6 +19,7 @@ class UrRtdeReceiver(Node):
     con: rtde.RTDE = None
     receive_thread: Thread = None
     is_running: bool = False
+    is_json_out = False
 
     def __init__(self):
         super().__init__("ur_rtde_receiver")
@@ -28,7 +30,14 @@ class UrRtdeReceiver(Node):
             "install/ur_rtde_receiver/share/ur_rtde_receiver/config/configuration.xml",
         )
         self.declare_parameter("ur_rtde_env.frequency", 10)
-        self.publisher = self.create_publisher(UrRtde, "ur_rtde_data", 10)
+        self.declare_parameter("ur_rtde_env.json", False)
+
+        self.is_json_out = self.get_parameter("ur_rtde_env.json").value
+
+        if self.is_json_out == True:
+            self.publisher = self.create_publisher(String, "ur_rtde_data", 10)
+        else:
+            self.publisher = self.create_publisher(UrRtde, "ur_rtde_data", 10)
 
         self.connect()
 
@@ -38,47 +47,51 @@ class UrRtdeReceiver(Node):
                 state = self.con.receive()
 
                 if state is not None:
-                    self.get_logger().debug(json.dumps(state.__dict__))
-                    msg = UrRtde()
-                    msg.timestamp = state.timestamp
-                    msg.target_q = state.target_q
-                    msg.target_qd = state.target_qd
-                    msg.target_qdd = state.target_qdd
-                    msg.target_current = state.target_current
-                    msg.target_moment = state.target_moment
-                    msg.actual_q = state.actual_q
-                    msg.actual_qd = state.actual_qd
-                    msg.actual_current = state.actual_current
-                    msg.joint_control_output = state.joint_control_output
-                    msg.actual_tcp_pose = state.actual_TCP_pose
-                    msg.actual_tcp_speed = state.actual_TCP_speed
-                    msg.actual_tcp_force = state.actual_TCP_force
-                    msg.target_tcp_pose = state.target_TCP_pose
-                    msg.target_tcp_speed = state.target_TCP_speed
-                    msg.actual_digital_input_bits = state.actual_digital_input_bits
-                    msg.joint_temperatures = state.joint_temperatures
-                    msg.actual_execution_time = state.actual_execution_time
-                    msg.robot_mode = state.robot_mode
-                    msg.joint_mode = state.joint_mode
-                    msg.safety_status = state.safety_status
-                    msg.actual_tool_accelerometer = state.actual_tool_accelerometer
-                    msg.speed_scaling = state.speed_scaling
-                    msg.target_speed_fraction = state.target_speed_fraction
-                    msg.actual_momentum = state.actual_momentum
-                    msg.actual_main_voltage = state.actual_main_voltage
-                    msg.actual_robot_voltage = state.actual_robot_voltage
-                    msg.actual_robot_current = state.actual_robot_current
-                    msg.actual_joint_voltage = state.actual_joint_voltage
-                    msg.actual_digital_output_bits = state.actual_digital_output_bits
-                    msg.runtime_state = state.runtime_state
-                    msg.joint_position_deviation_ratio = (
-                        state.joint_position_deviation_ratio
-                    )
-                    self.publisher.publish(msg)
+                    if self.publisher.msg_type == UrRtde:
+                        msg = UrRtde()
+                        msg.timestamp = state.timestamp
+                        msg.target_q = state.target_q
+                        msg.target_qd = state.target_qd
+                        msg.target_qdd = state.target_qdd
+                        msg.target_current = state.target_current
+                        msg.target_moment = state.target_moment
+                        msg.actual_q = state.actual_q
+                        msg.actual_qd = state.actual_qd
+                        msg.actual_current = state.actual_current
+                        msg.joint_control_output = state.joint_control_output
+                        msg.actual_tcp_pose = state.actual_TCP_pose
+                        msg.actual_tcp_speed = state.actual_TCP_speed
+                        msg.actual_tcp_force = state.actual_TCP_force
+                        msg.target_tcp_pose = state.target_TCP_pose
+                        msg.target_tcp_speed = state.target_TCP_speed
+                        msg.actual_digital_input_bits = state.actual_digital_input_bits
+                        msg.joint_temperatures = state.joint_temperatures
+                        msg.actual_execution_time = state.actual_execution_time
+                        msg.robot_mode = state.robot_mode
+                        msg.joint_mode = state.joint_mode
+                        msg.safety_status = state.safety_status
+                        msg.actual_tool_accelerometer = state.actual_tool_accelerometer
+                        msg.speed_scaling = state.speed_scaling
+                        msg.target_speed_fraction = state.target_speed_fraction
+                        msg.actual_momentum = state.actual_momentum
+                        msg.actual_main_voltage = state.actual_main_voltage
+                        msg.actual_robot_voltage = state.actual_robot_voltage
+                        msg.actual_robot_current = state.actual_robot_current
+                        msg.actual_joint_voltage = state.actual_joint_voltage
+                        msg.actual_digital_output_bits = state.actual_digital_output_bits
+                        msg.runtime_state = state.runtime_state
+                        msg.joint_position_deviation_ratio = (
+                            state.joint_position_deviation_ratio
+                        )
+                        self.publisher.publish(msg)
+                    elif self.publisher.msg_type is String:
+                        msg = String()
+                        msg.data = json.dumps(state.__dict__)
+                        self.publisher.publish(msg)
             except Exception as e:
                 self.get_logger().error(str(e))
                 self.disconnect()
-                
+
                 if self.is_running == True:
                     self.connect()
                 pass
