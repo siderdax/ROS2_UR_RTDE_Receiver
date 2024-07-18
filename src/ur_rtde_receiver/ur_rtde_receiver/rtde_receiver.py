@@ -78,7 +78,9 @@ class UrRtdeReceiver(Node):
             except Exception as e:
                 self.get_logger().error(str(e))
                 self.disconnect()
-                self.connect()
+                
+                if self.is_running == True:
+                    self.connect()
                 pass
 
     def on_set_parameters(self, params: List[Parameter]):
