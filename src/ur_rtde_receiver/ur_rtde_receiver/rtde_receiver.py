@@ -10,8 +10,8 @@ from rtde_interfaces.msg import UrRtde
 
 import json
 
-from rtde import rtde
-from rtde import rtde_config
+from .rtde import rtde
+from .rtde import rtde_config
 
 
 class UrRtdeReceiver(Node):
