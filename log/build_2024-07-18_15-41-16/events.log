@@ -1,0 +1,301 @@
+[0.000000] (-) TimerEvent: {}
+[0.000414] (rtde_interfaces) JobQueued: {'identifier': 'rtde_interfaces', 'dependencies': OrderedDict()}
+[0.000485] (ur_rtde_receiver) JobQueued: {'identifier': 'ur_rtde_receiver', 'dependencies': OrderedDict([('rtde_interfaces', '/root/ur_rtde/install/rtde_interfaces')])}
+[0.000536] (rtde_interfaces) JobStarted: {'identifier': 'rtde_interfaces'}
+[0.001733] (rtde_interfaces) JobProgress: {'identifier': 'rtde_interfaces', 'progress': 'cmake'}
+[0.002101] (rtde_interfaces) Command: {'cmd': ['/usr/bin/cmake', '/root/ur_rtde/src/rtde_interfaces', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/root/ur_rtde/install/rtde_interfaces'], 'cwd': '/root/ur_rtde/build/rtde_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '172.27.80.1 62222 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/root/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-32ced101-2736-4e5c-b016-bf7c50692ed2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-c39b968dce.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ur_rtde/build/rtde_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.27.80.1 62222 172.27.87.251 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.055379] (rtde_interfaces) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.094222] (-) TimerEvent: {}
+[0.107020] (rtde_interfaces) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.113409] (rtde_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.176379] (rtde_interfaces) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.183346] (rtde_interfaces) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.183685] (rtde_interfaces) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.183992] (rtde_interfaces) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.186671] (rtde_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.194395] (-) TimerEvent: {}
+[0.274718] (rtde_interfaces) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.283073] (rtde_interfaces) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.283406] (rtde_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.283494] (rtde_interfaces) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.287059] (rtde_interfaces) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.9 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.295265] (-) TimerEvent: {}
+[0.396268] (-) TimerEvent: {}
+[0.434223] (rtde_interfaces) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.496389] (-) TimerEvent: {}
+[0.515721] (rtde_interfaces) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.540867] (rtde_interfaces) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.543592] (rtde_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.550857] (rtde_interfaces) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.596488] (-) TimerEvent: {}
+[0.597431] (rtde_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.696600] (-) TimerEvent: {}
+[0.796922] (-) TimerEvent: {}
+[0.891835] (rtde_interfaces) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[0.897070] (-) TimerEvent: {}
+[0.997662] (-) TimerEvent: {}
+[1.074814] (rtde_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.097771] (-) TimerEvent: {}
+[1.198077] (-) TimerEvent: {}
+[1.298398] (-) TimerEvent: {}
+[1.388607] (rtde_interfaces) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.398549] (-) TimerEvent: {}
+[1.412026] (rtde_interfaces) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.413375] (rtde_interfaces) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.439200] (rtde_interfaces) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.439532] (rtde_interfaces) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.439631] (rtde_interfaces) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.439703] (rtde_interfaces) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.460283] (rtde_interfaces) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.498013] (rtde_interfaces) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.11 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[1.498663] (-) TimerEvent: {}
+[1.523707] (rtde_interfaces) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[1.525266] (rtde_interfaces) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[1.529549] (rtde_interfaces) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.592790] (rtde_interfaces) StdoutLine: {'line': b'-- Generating done\n'}
+[1.596308] (rtde_interfaces) StdoutLine: {'line': b'-- Build files have been written to: /root/ur_rtde/build/rtde_interfaces\n'}
+[1.599073] (-) TimerEvent: {}
+[1.606312] (rtde_interfaces) CommandEnded: {'returncode': 0}
+[1.607908] (rtde_interfaces) JobProgress: {'identifier': 'rtde_interfaces', 'progress': 'build'}
+[1.608398] (rtde_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--build', '/root/ur_rtde/build/rtde_interfaces', '--', '-j6', '-l6'], 'cwd': '/root/ur_rtde/build/rtde_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '172.27.80.1 62222 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/root/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-32ced101-2736-4e5c-b016-bf7c50692ed2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-c39b968dce.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ur_rtde/build/rtde_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.27.80.1 62222 172.27.87.251 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.652307] (rtde_interfaces) StdoutLine: {'line': b'[  3%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.660108] (rtde_interfaces) StdoutLine: {'line': b'[  6%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.674183] (rtde_interfaces) StdoutLine: {'line': b'[  6%] Built target ament_cmake_python_symlink_rtde_interfaces\n'}
+[1.699287] (-) TimerEvent: {}
+[1.799593] (-) TimerEvent: {}
+[1.899885] (-) TimerEvent: {}
+[2.000238] (-) TimerEvent: {}
+[2.023159] (rtde_interfaces) StdoutLine: {'line': b'[  6%] Built target rtde_interfaces__cpp\n'}
+[2.032272] (rtde_interfaces) StdoutLine: {'line': b'running egg_info\n'}
+[2.033122] (rtde_interfaces) StdoutLine: {'line': b'[  9%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.033305] (rtde_interfaces) StdoutLine: {'line': b'creating rtde_interfaces.egg-info\n'}
+[2.033931] (rtde_interfaces) StdoutLine: {'line': b'[ 12%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.034201] (rtde_interfaces) StdoutLine: {'line': b'writing rtde_interfaces.egg-info/PKG-INFO\n'}
+[2.034571] (rtde_interfaces) StdoutLine: {'line': b'writing dependency_links to rtde_interfaces.egg-info/dependency_links.txt\n'}
+[2.034874] (rtde_interfaces) StdoutLine: {'line': b'writing top-level names to rtde_interfaces.egg-info/top_level.txt\n'}
+[2.035249] (rtde_interfaces) StdoutLine: {'line': b"writing manifest file 'rtde_interfaces.egg-info/SOURCES.txt'\n"}
+[2.038081] (rtde_interfaces) StdoutLine: {'line': b"reading manifest file 'rtde_interfaces.egg-info/SOURCES.txt'\n"}
+[2.039203] (rtde_interfaces) StdoutLine: {'line': b"writing manifest file 'rtde_interfaces.egg-info/SOURCES.txt'\n"}
+[2.044726] (rtde_interfaces) StdoutLine: {'line': b'[ 16%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.078281] (rtde_interfaces) StdoutLine: {'line': b'[ 16%] Built target ament_cmake_python_build_rtde_interfaces_egg\n'}
+[2.101532] (-) TimerEvent: {}
+[2.127117] (rtde_interfaces) StdoutLine: {'line': b'[ 19%] \x1b[32mBuilding C object CMakeFiles/rtde_interfaces__rosidl_generator_c.dir/rosidl_generator_c/rtde_interfaces/msg/detail/ur_rtde__functions.c.o\x1b[0m\n'}
+[2.200054] (rtde_interfaces) StdoutLine: {'line': b'[ 22%] \x1b[32m\x1b[1mLinking C shared library librtde_interfaces__rosidl_generator_c.so\x1b[0m\n'}
+[2.201694] (-) TimerEvent: {}
+[2.248195] (rtde_interfaces) StdoutLine: {'line': b'[ 22%] Built target rtde_interfaces__rosidl_generator_c\n'}
+[2.260284] (rtde_interfaces) StdoutLine: {'line': b'[ 25%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.281942] (rtde_interfaces) StdoutLine: {'line': b'[ 29%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.290784] (rtde_interfaces) StdoutLine: {'line': b'[ 32%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.301819] (-) TimerEvent: {}
+[2.352367] (rtde_interfaces) StdoutLine: {'line': b'[ 35%] \x1b[32mBuilding CXX object CMakeFiles/rtde_interfaces__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/rtde_interfaces/msg/ur_rtde__type_support.cpp.o\x1b[0m\n'}
+[2.401915] (-) TimerEvent: {}
+[2.502508] (-) TimerEvent: {}
+[2.583413] (rtde_interfaces) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/rtde_interfaces__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/rtde_interfaces/msg/detail/ur_rtde__type_support.cpp.o\x1b[0m\n'}
+[2.597840] (rtde_interfaces) StdoutLine: {'line': b'[ 41%] \x1b[32mBuilding CXX object CMakeFiles/rtde_interfaces__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/rtde_interfaces/msg/detail/dds_fastrtps/ur_rtde__type_support.cpp.o\x1b[0m\n'}
+[2.605912] (-) TimerEvent: {}
+[2.706593] (-) TimerEvent: {}
+[2.727187] (rtde_interfaces) StdoutLine: {'line': b'[ 45%] \x1b[32m\x1b[1mLinking CXX shared library librtde_interfaces__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[2.741672] (rtde_interfaces) StdoutLine: {'line': b'[ 48%] \x1b[32mBuilding CXX object CMakeFiles/rtde_interfaces__rosidl_typesupport_c.dir/rosidl_typesupport_c/rtde_interfaces/msg/ur_rtde__type_support.cpp.o\x1b[0m\n'}
+[2.812708] (-) TimerEvent: {}
+[2.827629] (rtde_interfaces) StdoutLine: {'line': b'[ 48%] Built target rtde_interfaces__rosidl_typesupport_cpp\n'}
+[2.830603] (rtde_interfaces) StdoutLine: {'line': b'[ 51%] \x1b[32m\x1b[1mLinking CXX shared library librtde_interfaces__rosidl_typesupport_c.so\x1b[0m\n'}
+[2.861663] (rtde_interfaces) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding CXX object CMakeFiles/rtde_interfaces__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/rtde_interfaces/msg/detail/ur_rtde__type_support_c.cpp.o\x1b[0m\n'}
+[2.881242] (rtde_interfaces) StdoutLine: {'line': b'[ 58%] \x1b[32mBuilding C object CMakeFiles/rtde_interfaces__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/rtde_interfaces/msg/detail/ur_rtde__type_support.c.o\x1b[0m\n'}
+[2.911181] (rtde_interfaces) StdoutLine: {'line': b'[ 58%] Built target rtde_interfaces__rosidl_typesupport_c\n'}
+[2.912799] (-) TimerEvent: {}
+[3.013066] (-) TimerEvent: {}
+[3.029966] (rtde_interfaces) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking C shared library librtde_interfaces__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.087424] (rtde_interfaces) StdoutLine: {'line': b'[ 61%] Built target rtde_interfaces__rosidl_typesupport_introspection_c\n'}
+[3.113219] (-) TimerEvent: {}
+[3.213890] (-) TimerEvent: {}
+[3.275841] (rtde_interfaces) StdoutLine: {'line': b'[ 64%] \x1b[32m\x1b[1mLinking CXX shared library librtde_interfaces__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.280475] (rtde_interfaces) StdoutLine: {'line': b'[ 67%] \x1b[32m\x1b[1mLinking CXX shared library librtde_interfaces__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.282266] (rtde_interfaces) StdoutLine: {'line': b'[ 70%] \x1b[32m\x1b[1mLinking CXX shared library librtde_interfaces__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.314032] (-) TimerEvent: {}
+[3.399111] (rtde_interfaces) StdoutLine: {'line': b'[ 70%] Built target rtde_interfaces__rosidl_typesupport_fastrtps_cpp\n'}
+[3.402046] (rtde_interfaces) StdoutLine: {'line': b'[ 70%] Built target rtde_interfaces__rosidl_typesupport_fastrtps_c\n'}
+[3.409100] (rtde_interfaces) StdoutLine: {'line': b'[ 70%] Built target rtde_interfaces__rosidl_typesupport_introspection_cpp\n'}
+[3.414155] (-) TimerEvent: {}
+[3.430071] (rtde_interfaces) StdoutLine: {'line': b'[ 70%] Built target rtde_interfaces\n'}
+[3.451121] (rtde_interfaces) StdoutLine: {'line': b'[ 74%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.514267] (-) TimerEvent: {}
+[3.614666] (-) TimerEvent: {}
+[3.715028] (-) TimerEvent: {}
+[3.815403] (-) TimerEvent: {}
+[3.915791] (-) TimerEvent: {}
+[3.981829] (rtde_interfaces) StdoutLine: {'line': b'[ 74%] Built target rtde_interfaces__py\n'}
+[4.000006] (rtde_interfaces) StdoutLine: {'line': b'[ 77%] \x1b[32mBuilding C object CMakeFiles/rtde_interfaces__rosidl_generator_py.dir/rosidl_generator_py/rtde_interfaces/msg/_ur_rtde_s.c.o\x1b[0m\n'}
+[4.015909] (-) TimerEvent: {}
+[4.116284] (-) TimerEvent: {}
+[4.167692] (rtde_interfaces) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rtde_interfaces/librtde_interfaces__rosidl_generator_py.so\x1b[0m\n'}
+[4.205545] (rtde_interfaces) StdoutLine: {'line': b'[ 80%] Built target rtde_interfaces__rosidl_generator_py\n'}
+[4.216406] (-) TimerEvent: {}
+[4.223435] (rtde_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/rtde_interfaces__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/rtde_interfaces/_rtde_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.223971] (rtde_interfaces) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/rtde_interfaces__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/rtde_interfaces/_rtde_interfaces_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.224807] (rtde_interfaces) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/rtde_interfaces__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/rtde_interfaces/_rtde_interfaces_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.317015] (-) TimerEvent: {}
+[4.322409] (rtde_interfaces) StdoutLine: {'line': b'[ 93%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.326678] (rtde_interfaces) StdoutLine: {'line': b'[ 96%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.331825] (rtde_interfaces) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[4.359411] (rtde_interfaces) StdoutLine: {'line': b'[100%] Built target rtde_interfaces__rosidl_typesupport_c__pyext\n'}
+[4.374594] (rtde_interfaces) StdoutLine: {'line': b'[100%] Built target rtde_interfaces__rosidl_typesupport_introspection_c__pyext\n'}
+[4.381229] (rtde_interfaces) StdoutLine: {'line': b'[100%] Built target rtde_interfaces__rosidl_typesupport_fastrtps_c__pyext\n'}
+[4.392328] (rtde_interfaces) CommandEnded: {'returncode': 0}
+[4.417134] (-) TimerEvent: {}
+[4.451366] (rtde_interfaces) JobProgress: {'identifier': 'rtde_interfaces', 'progress': 'install'}
+[4.460097] (rtde_interfaces) Command: {'cmd': ['/usr/bin/cmake', '--install', '/root/ur_rtde/build/rtde_interfaces'], 'cwd': '/root/ur_rtde/build/rtde_interfaces', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'root'), ('SSH_CLIENT', '172.27.80.1 62222 22'), ('XDG_SESSION_TYPE', 'tty'), ('GIT_ASKPASS', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('BROWSER', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh'), ('MOTD_SHOWN', 'pam'), ('HOME', '/root'), ('OLDPWD', '/root/.vscode-server'), ('TERM_PROGRAM_VERSION', '1.91.1'), ('VSCODE_IPC_HOOK_CLI', '/run/user/0/vscode-ipc-32ced101-2736-4e5c-b016-bf7c50692ed2.sock'), ('ROS_PYTHON_VERSION', '3'), ('VSCODE_GIT_ASKPASS_MAIN', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js'), ('VSCODE_GIT_ASKPASS_NODE', '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node'), ('SSL_CERT_FILE', '/usr/lib/ssl/certs/ca-certificates.crt'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/0/bus'), ('COLORTERM', 'truecolor'), ('ROS_DISTRO', 'humble'), ('LOGNAME', 'root'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('TERM', 'xterm-256color'), ('XDG_SESSION_ID', '7'), ('ROS_LOCALHOST_ONLY', '0'), ('PATH', '/opt/ros/humble/bin:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin'), ('XDG_RUNTIME_DIR', '/run/user/0'), ('SSL_CERT_DIR', '/usr/lib/ssl/certs'), ('LANG', 'en_US.UTF-8'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('VSCODE_GIT_IPC_HANDLE', '/run/user/0/vscode-git-c39b968dce.sock'), ('TERM_PROGRAM', 'vscode'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('VSCODE_GIT_ASKPASS_EXTRA_ARGS', ''), ('PWD', '/root/ur_rtde/build/rtde_interfaces'), ('LC_ALL', 'en_US.UTF-8'), ('SSH_CONNECTION', '172.27.80.1 62222 172.27.87.251 22'), ('XDG_DATA_DIRS', '/usr/local/share:/usr/share:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('COLCON', '1'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[4.467512] (rtde_interfaces) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[4.468016] (rtde_interfaces) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[4.469024] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/ament_index/resource_index/rosidl_interfaces/rtde_interfaces\n'}
+[4.478877] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__functions.h\n'}
+[4.486923] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__struct.h\n'}
+[4.494830] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__type_support.h\n'}
+[4.502674] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/rosidl_generator_c__visibility_control.h\n'}
+[4.510852] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/ur_rtde.h\n'}
+[4.517255] (-) TimerEvent: {}
+[4.519373] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/environment/library_path.sh\n'}
+[4.527150] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/environment/library_path.dsv\n'}
+[4.535670] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__rosidl_typesupport_fastrtps_c.h\n'}
+[4.544239] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/rosidl_typesupport_fastrtps_c__visibility_control.h\n'}
+[4.552132] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__rosidl_typesupport_introspection_c.h\n'}
+[4.560750] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/rosidl_typesupport_introspection_c__visibility_control.h\n'}
+[4.569357] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__builder.hpp\n'}
+[4.579373] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__struct.hpp\n'}
+[4.588224] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__traits.hpp\n'}
+[4.601759] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/ur_rtde.hpp\n'}
+[4.606655] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__rosidl_typesupport_fastrtps_cpp.hpp\n'}
+[4.617722] (-) TimerEvent: {}
+[4.619910] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/rosidl_typesupport_fastrtps_cpp__visibility_control.h\n'}
+[4.628601] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/include/rtde_interfaces/rtde_interfaces/msg/detail/ur_rtde__rosidl_typesupport_introspection_cpp.hpp\n'}
+[4.637195] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/environment/pythonpath.sh\n'}
+[4.645114] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/environment/pythonpath.dsv\n'}
+[4.654419] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[4.662140] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[4.670056] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[4.681405] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[4.690234] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/__init__.py\n'}
+[4.698100] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/_rtde_interfaces_s.ep.rosidl_typesupport_c.c\n'}
+[4.706147] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/_rtde_interfaces_s.ep.rosidl_typesupport_fastrtps_c.c\n'}
+[4.714023] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/_rtde_interfaces_s.ep.rosidl_typesupport_introspection_c.c\n'}
+[4.717836] (-) TimerEvent: {}
+[4.721704] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/librtde_interfaces__rosidl_generator_py.so\n'}
+[4.731551] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/msg/__init__.py\n'}
+[4.739729] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/msg/_ur_rtde.py\n'}
+[4.747566] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/msg/_ur_rtde_s.c\n'}
+[4.755188] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.763377] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.771257] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.779857] (rtde_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.780216] (rtde_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.780548] (rtde_interfaces) StdoutLine: {'line': b'-- Up-to-date symlink: /root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/rtde_interfaces_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\n'}
+[4.781109] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/msg/UrRtde.idl\n'}
+[4.790207] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/msg/UrRtde.msg\n'}
+[4.798493] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/ament_index/resource_index/package_run_dependencies/rtde_interfaces\n'}
+[4.806727] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/ament_index/resource_index/parent_prefix_path/rtde_interfaces\n'}
+[4.814344] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/environment/ament_prefix_path.sh\n'}
+[4.817973] (-) TimerEvent: {}
+[4.822459] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/environment/ament_prefix_path.dsv\n'}
+[4.830152] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/environment/path.sh\n'}
+[4.840487] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/environment/path.dsv\n'}
+[4.848358] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/local_setup.bash\n'}
+[4.859861] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/local_setup.sh\n'}
+[4.864925] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/local_setup.zsh\n'}
+[4.872791] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/local_setup.dsv\n'}
+[4.880382] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/package.dsv\n'}
+[4.888883] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/ament_index/resource_index/packages/rtde_interfaces\n'}
+[4.897375] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rosidl_cmake-extras.cmake\n'}
+[4.905280] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/ament_cmake_export_include_directories-extras.cmake\n'}
+[4.913353] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/ament_cmake_export_libraries-extras.cmake\n'}
+[4.918102] (-) TimerEvent: {}
+[4.921303] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/ament_cmake_export_targets-extras.cmake\n'}
+[4.929162] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rosidl_cmake_export_typesupport_targets-extras.cmake\n'}
+[4.937453] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/ament_cmake_export_dependencies-extras.cmake\n'}
+[4.946700] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rosidl_cmake_export_typesupport_libraries-extras.cmake\n'}
+[4.954908] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfacesConfig.cmake\n'}
+[4.962889] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfacesConfig-version.cmake\n'}
+[4.970562] (rtde_interfaces) StdoutLine: {'line': b'-- Symlinking: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/package.xml\n'}
+[4.979442] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_generator_c.so\n'}
+[4.979964] (rtde_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_generator_c.so" to ""\n'}
+[4.980124] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_fastrtps_c.so\n'}
+[4.980398] (rtde_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_fastrtps_c.so" to ""\n'}
+[4.980614] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_introspection_c.so\n'}
+[4.980870] (rtde_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_introspection_c.so" to ""\n'}
+[4.980983] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_c.so\n'}
+[4.981206] (rtde_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_c.so" to ""\n'}
+[4.981319] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_fastrtps_cpp.so\n'}
+[4.981718] (rtde_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_fastrtps_cpp.so" to ""\n'}
+[4.981882] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_introspection_cpp.so\n'}
+[4.982431] (rtde_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_introspection_cpp.so" to ""\n'}
+[4.982531] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_cpp.so\n'}
+[4.982841] (rtde_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_typesupport_cpp.so" to ""\n'}
+[5.018212] (-) TimerEvent: {}
+[5.019986] (rtde_interfaces) StdoutLine: {'line': b"Listing '/root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces'...\n"}
+[5.020161] (rtde_interfaces) StdoutLine: {'line': b"Compiling '/root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/__init__.py'...\n"}
+[5.020249] (rtde_interfaces) StdoutLine: {'line': b"Listing '/root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/msg'...\n"}
+[5.020326] (rtde_interfaces) StdoutLine: {'line': b"Compiling '/root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/msg/__init__.py'...\n"}
+[5.020452] (rtde_interfaces) StdoutLine: {'line': b"Compiling '/root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages/rtde_interfaces/msg/_ur_rtde.py'...\n"}
+[5.024719] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_generator_py.so\n'}
+[5.025561] (rtde_interfaces) StdoutLine: {'line': b'-- Set runtime path of "/root/ur_rtde/install/rtde_interfaces/lib/librtde_interfaces__rosidl_generator_py.so" to ""\n'}
+[5.025740] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_generator_cExport.cmake\n'}
+[5.025847] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_generator_cExport-noconfig.cmake\n'}
+[5.028343] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_typesupport_fastrtps_cExport.cmake\n'}
+[5.028648] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_typesupport_fastrtps_cExport-noconfig.cmake\n'}
+[5.028799] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfaces__rosidl_typesupport_introspection_cExport.cmake\n'}
+[5.028948] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfaces__rosidl_typesupport_introspection_cExport-noconfig.cmake\n'}
+[5.029012] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfaces__rosidl_typesupport_cExport.cmake\n'}
+[5.029074] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfaces__rosidl_typesupport_cExport-noconfig.cmake\n'}
+[5.029133] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_generator_cppExport.cmake\n'}
+[5.029191] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_typesupport_fastrtps_cppExport.cmake\n'}
+[5.029249] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_typesupport_fastrtps_cppExport-noconfig.cmake\n'}
+[5.029359] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfaces__rosidl_typesupport_introspection_cppExport.cmake\n'}
+[5.029462] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfaces__rosidl_typesupport_introspection_cppExport-noconfig.cmake\n'}
+[5.029530] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfaces__rosidl_typesupport_cppExport.cmake\n'}
+[5.029596] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/rtde_interfaces__rosidl_typesupport_cppExport-noconfig.cmake\n'}
+[5.029660] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_generator_pyExport.cmake\n'}
+[5.029725] (rtde_interfaces) StdoutLine: {'line': b'-- Installing: /root/ur_rtde/install/rtde_interfaces/share/rtde_interfaces/cmake/export_rtde_interfaces__rosidl_generator_pyExport-noconfig.cmake\n'}
+[5.047495] (rtde_interfaces) CommandEnded: {'returncode': 0}
+[5.120167] (-) TimerEvent: {}
+[5.123605] (rtde_interfaces) JobEnded: {'identifier': 'rtde_interfaces', 'rc': 0}
+[5.125436] (ur_rtde_receiver) JobStarted: {'identifier': 'ur_rtde_receiver'}
+[5.220278] (-) TimerEvent: {}
+[5.324057] (-) TimerEvent: {}
+[5.424401] (-) TimerEvent: {}
+[5.524717] (-) TimerEvent: {}
+[5.625043] (-) TimerEvent: {}
+[5.725360] (-) TimerEvent: {}
+[5.825728] (-) TimerEvent: {}
+[5.926059] (-) TimerEvent: {}
+[6.022315] (ur_rtde_receiver) Command: {'cmd': ['/usr/bin/python3', '-W', 'ignore:setup.py install is deprecated', 'setup.py', 'develop', '--editable', '--build-directory', '/root/ur_rtde/build/ur_rtde_receiver/build', '--no-deps', 'symlink_data'], 'cwd': '/root/ur_rtde/build/ur_rtde_receiver', 'env': {'LESSOPEN': '| /usr/bin/lesspipe %s', 'USER': 'root', 'SSH_CLIENT': '172.27.80.1 62222 22', 'XDG_SESSION_TYPE': 'tty', 'GIT_ASKPASS': '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass.sh', 'SHLVL': '1', 'LD_LIBRARY_PATH': '/root/ur_rtde/install/rtde_interfaces/lib:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib', 'BROWSER': '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/helpers/browser.sh', 'MOTD_SHOWN': 'pam', 'HOME': '/root', 'OLDPWD': '/root/.vscode-server', 'TERM_PROGRAM_VERSION': '1.91.1', 'VSCODE_IPC_HOOK_CLI': '/run/user/0/vscode-ipc-32ced101-2736-4e5c-b016-bf7c50692ed2.sock', 'ROS_PYTHON_VERSION': '3', 'VSCODE_GIT_ASKPASS_MAIN': '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/extensions/git/dist/askpass-main.js', 'VSCODE_GIT_ASKPASS_NODE': '/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/node', 'SSL_CERT_FILE': '/usr/lib/ssl/certs/ca-certificates.crt', 'DBUS_SESSION_BUS_ADDRESS': 'unix:path=/run/user/0/bus', 'COLORTERM': 'truecolor', 'ROS_DISTRO': 'humble', 'LOGNAME': 'root', '_': '/usr/bin/colcon', 'ROS_VERSION': '2', 'XDG_SESSION_CLASS': 'user', 'TERM': 'xterm-256color', 'XDG_SESSION_ID': '7', 'ROS_LOCALHOST_ONLY': '0', 'PATH': '/opt/ros/humble/bin:/root/.vscode-server/cli/servers/Stable-f1e16e1e6214d7c44d078b1f0607b2388f29d729/server/bin/remote-cli:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin', 'XDG_RUNTIME_DIR': '/run/user/0', 'SSL_CERT_DIR': '/usr/lib/ssl/certs', 'LANG': 'en_US.UTF-8', 'LS_COLORS': 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:', 'VSCODE_GIT_IPC_HANDLE': '/run/user/0/vscode-git-c39b968dce.sock', 'TERM_PROGRAM': 'vscode', 'AMENT_PREFIX_PATH': '/root/ur_rtde/install/rtde_interfaces:/opt/ros/humble', 'SHELL': '/bin/bash', 'LESSCLOSE': '/usr/bin/lesspipe %s %s', 'VSCODE_GIT_ASKPASS_EXTRA_ARGS': '', 'PWD': '/root/ur_rtde/build/ur_rtde_receiver', 'LC_ALL': 'en_US.UTF-8', 'SSH_CONNECTION': '172.27.80.1 62222 172.27.87.251 22', 'XDG_DATA_DIRS': '/usr/local/share:/usr/share:/var/lib/snapd/desktop', 'PYTHONPATH': '/root/ur_rtde/build/ur_rtde_receiver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ur_rtde/install/ur_rtde_receiver/lib/python3.10/site-packages:/root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages:/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages', 'COLCON': '1', 'CMAKE_PREFIX_PATH': '/root/ur_rtde/install/rtde_interfaces'}, 'shell': False}
+[6.026184] (-) TimerEvent: {}
+[6.126458] (-) TimerEvent: {}
+[6.226777] (-) TimerEvent: {}
+[6.327093] (-) TimerEvent: {}
+[6.346263] (ur_rtde_receiver) StdoutLine: {'line': b'running develop\n'}
+[6.427216] (-) TimerEvent: {}
+[6.527566] (-) TimerEvent: {}
+[6.529357] (ur_rtde_receiver) StdoutLine: {'line': b'running egg_info\n'}
+[6.529600] (ur_rtde_receiver) StdoutLine: {'line': b'creating ur_rtde_receiver.egg-info\n'}
+[6.530076] (ur_rtde_receiver) StdoutLine: {'line': b'writing ur_rtde_receiver.egg-info/PKG-INFO\n'}
+[6.530474] (ur_rtde_receiver) StdoutLine: {'line': b'writing dependency_links to ur_rtde_receiver.egg-info/dependency_links.txt\n'}
+[6.530668] (ur_rtde_receiver) StdoutLine: {'line': b'writing entry points to ur_rtde_receiver.egg-info/entry_points.txt\n'}
+[6.530916] (ur_rtde_receiver) StdoutLine: {'line': b'writing requirements to ur_rtde_receiver.egg-info/requires.txt\n'}
+[6.531138] (ur_rtde_receiver) StdoutLine: {'line': b'writing top-level names to ur_rtde_receiver.egg-info/top_level.txt\n'}
+[6.531439] (ur_rtde_receiver) StdoutLine: {'line': b"writing manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'\n"}
+[6.532327] (ur_rtde_receiver) StdoutLine: {'line': b"reading manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'\n"}
+[6.532939] (ur_rtde_receiver) StdoutLine: {'line': b"writing manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'\n"}
+[6.534796] (ur_rtde_receiver) StdoutLine: {'line': b'running build_ext\n'}
+[6.535674] (ur_rtde_receiver) StdoutLine: {'line': b'Creating /root/ur_rtde/install/ur_rtde_receiver/lib/python3.10/site-packages/ur-rtde-receiver.egg-link (link to .)\n'}
+[6.536742] (ur_rtde_receiver) StdoutLine: {'line': b'Installing receiver script to /root/ur_rtde/install/ur_rtde_receiver/lib/ur_rtde_receiver\n'}
+[6.537304] (ur_rtde_receiver) StdoutLine: {'line': b'\n'}
+[6.537470] (ur_rtde_receiver) StdoutLine: {'line': b'Installed /root/ur_rtde/build/ur_rtde_receiver\n'}
+[6.537674] (ur_rtde_receiver) StdoutLine: {'line': b'running symlink_data\n'}
+[6.537959] (ur_rtde_receiver) StdoutLine: {'line': b'creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index\n'}
+[6.538053] (ur_rtde_receiver) StdoutLine: {'line': b'creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index\n'}
+[6.538121] (ur_rtde_receiver) StdoutLine: {'line': b'creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index/packages\n'}
+[6.538206] (ur_rtde_receiver) StdoutLine: {'line': b'symbolically linking /root/ur_rtde/build/ur_rtde_receiver/resource/ur_rtde_receiver -> /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index/packages\n'}
+[6.538541] (ur_rtde_receiver) StdoutLine: {'line': b'symbolically linking /root/ur_rtde/build/ur_rtde_receiver/package.xml -> /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver\n'}
+[6.538793] (ur_rtde_receiver) StdoutLine: {'line': b'creating /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver/config\n'}
+[6.539195] (ur_rtde_receiver) StdoutLine: {'line': b'symbolically linking /root/ur_rtde/build/ur_rtde_receiver/config/configuration.xml -> /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver/config\n'}
+[6.601062] (ur_rtde_receiver) CommandEnded: {'returncode': 0}
+[6.614417] (ur_rtde_receiver) JobEnded: {'identifier': 'ur_rtde_receiver', 'rc': 0}
+[6.615818] (-) EventReactorShutdown: {}

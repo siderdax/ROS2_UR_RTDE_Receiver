@@ -1,0 +1,24 @@
+running develop
+running egg_info
+creating ur_rtde_receiver.egg-info
+writing ur_rtde_receiver.egg-info/PKG-INFO
+writing dependency_links to ur_rtde_receiver.egg-info/dependency_links.txt
+writing entry points to ur_rtde_receiver.egg-info/entry_points.txt
+writing requirements to ur_rtde_receiver.egg-info/requires.txt
+writing top-level names to ur_rtde_receiver.egg-info/top_level.txt
+writing manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'
+reading manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'
+writing manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'
+running build_ext
+Creating /root/ur_rtde/install/ur_rtde_receiver/lib/python3.10/site-packages/ur-rtde-receiver.egg-link (link to .)
+Installing receiver script to /root/ur_rtde/install/ur_rtde_receiver/lib/ur_rtde_receiver
+
+Installed /root/ur_rtde/build/ur_rtde_receiver
+running symlink_data
+creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index
+creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index
+creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index/packages
+symbolically linking /root/ur_rtde/build/ur_rtde_receiver/resource/ur_rtde_receiver -> /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index/packages
+symbolically linking /root/ur_rtde/build/ur_rtde_receiver/package.xml -> /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver
+creating /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver/config
+symbolically linking /root/ur_rtde/build/ur_rtde_receiver/config/configuration.xml -> /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver/config

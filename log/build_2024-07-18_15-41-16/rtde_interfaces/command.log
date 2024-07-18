@@ -1,0 +1,6 @@
+Invoking command in '/root/ur_rtde/build/rtde_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ur_rtde/src/rtde_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/ur_rtde/install/rtde_interfaces
+Invoked command in '/root/ur_rtde/build/rtde_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /root/ur_rtde/src/rtde_interfaces -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/root/ur_rtde/install/rtde_interfaces
+Invoking command in '/root/ur_rtde/build/rtde_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ur_rtde/build/rtde_interfaces -- -j6 -l6
+Invoked command in '/root/ur_rtde/build/rtde_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /root/ur_rtde/build/rtde_interfaces -- -j6 -l6
+Invoking command in '/root/ur_rtde/build/rtde_interfaces': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ur_rtde/build/rtde_interfaces
+Invoked command in '/root/ur_rtde/build/rtde_interfaces' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /root/ur_rtde/build/rtde_interfaces

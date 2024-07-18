@@ -1,0 +1,26 @@
+[0.898s] Invoking command in '/root/ur_rtde/build/ur_rtde_receiver': AMENT_PREFIX_PATH=/root/ur_rtde/install/rtde_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ur_rtde/install/rtde_interfaces LD_LIBRARY_PATH=/root/ur_rtde/install/rtde_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ur_rtde/build/ur_rtde_receiver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ur_rtde/install/ur_rtde_receiver/lib/python3.10/site-packages:/root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/ur_rtde/build/ur_rtde_receiver/build --no-deps symlink_data
+[1.221s] running develop
+[1.404s] running egg_info
+[1.404s] creating ur_rtde_receiver.egg-info
+[1.405s] writing ur_rtde_receiver.egg-info/PKG-INFO
+[1.405s] writing dependency_links to ur_rtde_receiver.egg-info/dependency_links.txt
+[1.405s] writing entry points to ur_rtde_receiver.egg-info/entry_points.txt
+[1.406s] writing requirements to ur_rtde_receiver.egg-info/requires.txt
+[1.406s] writing top-level names to ur_rtde_receiver.egg-info/top_level.txt
+[1.406s] writing manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'
+[1.407s] reading manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'
+[1.408s] writing manifest file 'ur_rtde_receiver.egg-info/SOURCES.txt'
+[1.410s] running build_ext
+[1.410s] Creating /root/ur_rtde/install/ur_rtde_receiver/lib/python3.10/site-packages/ur-rtde-receiver.egg-link (link to .)
+[1.411s] Installing receiver script to /root/ur_rtde/install/ur_rtde_receiver/lib/ur_rtde_receiver
+[1.412s] 
+[1.412s] Installed /root/ur_rtde/build/ur_rtde_receiver
+[1.412s] running symlink_data
+[1.413s] creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index
+[1.413s] creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index
+[1.413s] creating /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index/packages
+[1.413s] symbolically linking /root/ur_rtde/build/ur_rtde_receiver/resource/ur_rtde_receiver -> /root/ur_rtde/install/ur_rtde_receiver/share/ament_index/resource_index/packages
+[1.413s] symbolically linking /root/ur_rtde/build/ur_rtde_receiver/package.xml -> /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver
+[1.414s] creating /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver/config
+[1.414s] symbolically linking /root/ur_rtde/build/ur_rtde_receiver/config/configuration.xml -> /root/ur_rtde/install/ur_rtde_receiver/share/ur_rtde_receiver/config
+[1.476s] Invoked command in '/root/ur_rtde/build/ur_rtde_receiver' returned '0': AMENT_PREFIX_PATH=/root/ur_rtde/install/rtde_interfaces:${AMENT_PREFIX_PATH} CMAKE_PREFIX_PATH=/root/ur_rtde/install/rtde_interfaces LD_LIBRARY_PATH=/root/ur_rtde/install/rtde_interfaces/lib:${LD_LIBRARY_PATH} PYTHONPATH=/root/ur_rtde/build/ur_rtde_receiver/prefix_override:/usr/lib/python3/dist-packages/colcon_core/task/python/colcon_distutils_commands:/root/ur_rtde/install/ur_rtde_receiver/lib/python3.10/site-packages:/root/ur_rtde/install/rtde_interfaces/local/lib/python3.10/dist-packages:${PYTHONPATH} /usr/bin/python3 -W ignore:setup.py install is deprecated setup.py develop --editable --build-directory /root/ur_rtde/build/ur_rtde_receiver/build --no-deps symlink_data
